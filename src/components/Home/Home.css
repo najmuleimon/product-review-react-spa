@@ -1,0 +1,31 @@
+.banner .container{
+    display: flex;
+    align-items: center;
+}
+.text-part,
+.image-part{
+    width: 50%;
+}
+.text-part h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #222;
+}
+.text-part h1 span{
+    color: #ff4d1c;
+}
+.text-part h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #222;
+}
+.text-part p{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #585858;
+    padding-top: 30px;
+}
+.image-part{
+    text-align: center;
+}

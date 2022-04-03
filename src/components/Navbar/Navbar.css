@@ -1,0 +1,24 @@
+.navigation{
+    height: 60px;
+    width: 100%;
+    background: #f4f4f4;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.nav-links li{
+    padding: 0 15px;
+}
+.nav-links .link{
+    font-size: 18px;
+    color: #222;
+    font-weight: 500;
+}
+.nav-links .active-link{
+    font-size: 18px;
+    color: #ff4d1c;
+    font-weight: 500;
+}
