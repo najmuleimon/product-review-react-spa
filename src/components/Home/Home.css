@@ -29,3 +29,30 @@
 .image-part{
     text-align: center;
 }
+
+.reviews h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+}
+.reviews button{
+    border: 0;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #ff4d1c;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.review-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
