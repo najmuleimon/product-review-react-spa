@@ -29,3 +29,14 @@
     cursor: pointer;
     text-transform: capitalize;
 }
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .not-found h3 {
+        font-size: 36px;
+    }
+}
+@media (min-width: 320px) and (max-width: 575px) {
+    .not-found h3 {
+        font-size: 32px;
+    }
+}

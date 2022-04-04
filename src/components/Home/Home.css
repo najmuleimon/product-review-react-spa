@@ -68,3 +68,71 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .text-part h1{
+        font-size: 42px;
+    }
+    .text-part h2{
+        font-size: 32px;
+    }
+    .image-part img{
+        width: 80%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .text-part h1{
+        font-size: 34px;
+    }
+    .text-part h2{
+        font-size: 30px;
+    }
+    .image-part img{
+        width: 80%;
+    }
+    .review-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    .banner .container{
+        flex-direction: column;
+    }
+    .image-part{
+        text-align: center;
+    }
+    .text-part,
+    .image-part{
+        width: 100%;
+    }
+    .text-part{
+        order: 2;
+    }
+    .image-part{
+        order: 1;
+    }
+    
+    .review-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (min-width: 320px) and (max-width: 575px) {
+    .text-part h1 ,
+    .text-part h2 {
+        font-size: 28px;
+    }
+    .image-part img{
+        width: 100%;
+    }
+    .nav-links .link ,
+    .nav-links .active-link {
+        font-size: 14px;
+    }
+    .nav-links li {
+        padding: 0 7px;
+    }
+    .reviews h2 {
+        font-size: 28px;
+        padding-bottom: 30px;
+    }
+}

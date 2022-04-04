@@ -16,3 +16,9 @@
     color: #222;
     padding-bottom: 60px;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .all-charts{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
