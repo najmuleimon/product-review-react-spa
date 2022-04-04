@@ -1,3 +1,6 @@
+.banner{
+    padding: 80px 0;
+}
 .banner .container{
     display: flex;
     align-items: center;
@@ -27,15 +30,19 @@
     padding-top: 30px;
 }
 .image-part{
+    text-align: right;
+}
+.reviews{
+    padding-bottom: 80px;
     text-align: center;
 }
-
 .reviews h2{
     font-size: 40px;
     font-weight: 700;
     color: #222;
-    text-align: center;
+    padding-bottom: 60px;
 }
+.banner button,
 .reviews button{
     border: 0;
     outline: none;
@@ -50,6 +57,11 @@
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+    text-transform: capitalize;
+    margin-top: 50px;
+}
+.banner button{
+    margin-top: 20px;
 }
 .review-container{
     display: grid;

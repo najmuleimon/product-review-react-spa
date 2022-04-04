@@ -7,8 +7,8 @@ const Review = ({review}) => {
         <div className='single-review'>
             <img src={img} alt="" />
             <h3>{name}</h3>
+            <h4>Rating: <span>{rating}</span></h4>
             <p>{user_review}</p>
-            <p>Rating: {rating}</p>
         </div>
     );
 };

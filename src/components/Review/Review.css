@@ -9,11 +9,34 @@
     box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.1);
 }
 .single-review img{
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #999;
+}
+.single-review h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+    padding: 10px 0;
+}
+.single-review h4{
+    font-size: 17px;
+    font-weight: 500;
+    color: #222;
+}
+.single-review h4 span{
+    color: #ff4d1c;
+}
+.single-review p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #585858;
+    padding-top: 10px;
+    text-align: justify;
 }
