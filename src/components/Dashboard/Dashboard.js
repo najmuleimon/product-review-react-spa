@@ -70,7 +70,7 @@ const Dashboard = () => {
                         <stop offset="95%" stopColor="#82ca9d" stopOpacity={0}/>
                         </linearGradient>
                     </defs>
-                    <XAxis dataKey="name" />
+                    <XAxis dataKey="month" />
                     <YAxis />
                     <CartesianGrid strokeDasharray="3 3" />
                     <Tooltip />
@@ -82,7 +82,7 @@ const Dashboard = () => {
                 <BarChart width={600} height={400} data={data} margin={{top: 5, right: 30, left: 20, bottom: 5,}}
                     >
                     <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="name" />
+                    <XAxis dataKey="month" />
                     <YAxis />
                     <Tooltip />
                     <Legend />
