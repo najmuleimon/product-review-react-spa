@@ -6,3 +6,13 @@
 .all-charts .recharts-wrapper{
     margin: auto;
 }
+.dash{
+    padding: 80px 0;
+    text-align: center;
+}
+.dash h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #222;
+    padding-bottom: 60px;
+}

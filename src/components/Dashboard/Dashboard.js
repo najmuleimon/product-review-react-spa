@@ -42,57 +42,60 @@ const Dashboard = () => {
         }
     ]
     return (
-        <div className="all-charts">
-            <div>
-                <LineChart width={600} height={400} data={data} margin={{top: 5, right: 30, left: 20, bottom: 5}}>
+        <div className='dash'>
+            <h2>Dashboard</h2>
+            <div className="all-charts">
+                <div>
+                    <LineChart width={600} height={400} data={data} margin={{top: 5, right: 30, left: 20, bottom: 5}}>
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="month" />
+                        <YAxis />
+                        <Tooltip />
+                        <Legend />
+                        <Line type="monotone" dataKey="investment" stroke="#8884d8" activeDot={{ r: 8 }} />
+                        <Line type="monotone" dataKey="revenue" stroke="#82ca9d" />
+                        <Line type="monotone" dataKey="sell" stroke="#ff4d1c" />
+                    </LineChart>
+                </div>
+                <div>
+                    <AreaChart width={600} height={400} data={data}
+                    margin={{ top: 10, right: 30, left: 20, bottom: 0 }}>
+                    <defs>
+                        <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8}/>
+                        <stop offset="95%" stopColor="#8884d8" stopOpacity={0}/>
+                        </linearGradient>
+                        <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8}/>
+                        <stop offset="95%" stopColor="#82ca9d" stopOpacity={0}/>
+                        </linearGradient>
+                    </defs>
+                    <XAxis dataKey="name" />
+                    <YAxis />
                     <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="month" />
+                    <Tooltip />
+                    <Area type="monotone" dataKey="investment" stroke="#8884d8" fillOpacity={1} fill="url(#colorUv)" />
+                    <Area type="monotone" dataKey="revenue" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
+                    </AreaChart>
+                </div>
+                <div>
+                <BarChart width={600} height={400} data={data} margin={{top: 5, right: 30, left: 20, bottom: 5,}}
+                    >
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="name" />
                     <YAxis />
                     <Tooltip />
                     <Legend />
-                    <Line type="monotone" dataKey="investment" stroke="#8884d8" activeDot={{ r: 8 }} />
-                    <Line type="monotone" dataKey="revenue" stroke="#82ca9d" />
-                    <Line type="monotone" dataKey="sell" stroke="#ff4d1c" />
-                </LineChart>
-            </div>
-            <div>
-                <AreaChart width={600} height={400} data={data}
-                margin={{ top: 10, right: 30, left: 20, bottom: 0 }}>
-                <defs>
-                    <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8}/>
-                    <stop offset="95%" stopColor="#8884d8" stopOpacity={0}/>
-                    </linearGradient>
-                    <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8}/>
-                    <stop offset="95%" stopColor="#82ca9d" stopOpacity={0}/>
-                    </linearGradient>
-                </defs>
-                <XAxis dataKey="name" />
-                <YAxis />
-                <CartesianGrid strokeDasharray="3 3" />
-                <Tooltip />
-                <Area type="monotone" dataKey="investment" stroke="#8884d8" fillOpacity={1} fill="url(#colorUv)" />
-                <Area type="monotone" dataKey="revenue" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
-                </AreaChart>
-            </div>
-            <div>
-            <BarChart width={600} height={400} data={data} margin={{top: 5, right: 30, left: 20, bottom: 5,}}
-                >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Bar dataKey="investment" fill="#8884d8" />
-                <Bar dataKey="revenue" fill="#82ca9d" />
-                </BarChart>
-            </div>
-            <div>
-            <PieChart width={500} height={500}>
-                <Pie data={data} dataKey="investment" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
-                <Pie data={data} dataKey="revenue" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label />
-            </PieChart>
+                    <Bar dataKey="investment" fill="#8884d8" />
+                    <Bar dataKey="revenue" fill="#82ca9d" />
+                    </BarChart>
+                </div>
+                <div>
+                <PieChart width={400} height={400}>
+                    <Pie data={data} dataKey="investment" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
+                    <Pie data={data} dataKey="revenue" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label />
+                </PieChart>
+                </div>
             </div>
         </div>
         
