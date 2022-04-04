@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import watch from '../../images/watch.png';
-import useReview from '../hooks/useReview';
+import useReview from '../../hooks/useReview';
 import Review from '../Review/Review';
 import { useNavigate } from 'react-router-dom';
 
